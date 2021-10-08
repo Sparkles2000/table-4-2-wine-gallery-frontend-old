@@ -4,6 +4,8 @@ import {BASE_URL} from  "../../constraints/index.js";
 
 
 
+const [customergroups, setCustomergroups] = useState([]);
+
 useEffect(() => {
     fetch(BASE_URL + "customergroups")
       .then(res => {
