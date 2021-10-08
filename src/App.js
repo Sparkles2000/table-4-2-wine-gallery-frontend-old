@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
-// import CustomergroupContainer from './components/CustomergroupContainer/CustomergroupContainer';
+import CustomergroupContainer from './components/CustomergroupContainer/CustomergroupContainer';
 // import CustomergroupInfo from './components/CustomergroupInfo/CustomergroupInfo';
 // import BrandofwineContainer from './Components/BrandofwineContainer/BrandofwineContainer';
 // import BrandofwineInfo from './Components/BrandofwineInfo/BrandofwineInfo';
@@ -25,10 +25,10 @@ function App() {
        <Route exact path="/About">
        <About />
        </Route>
-       {/* <Route exact path="/customergroups">
+       <Route exact path="/customergroups">
        <CustomergroupContainer />
        </Route>
-       <Route exact path="/customergroups/:id">
+       {/* <Route exact path="/customergroups/:id">
        <CustomergroupInfo />
        </Route>
        <Route exact path="/brandofwines">
