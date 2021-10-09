@@ -1,7 +1,7 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import {BASE_URL} from  "../../constraints/index.js";
-
+import React from 'React';
+import { useEffect, useState } from 'React';
+import {BASE_URL} from  "./constraints/index.js";
+import Customergroup from './Customergroup/Customergroup';
 
 
 const [customergroups, setCustomergroups] = useState([]);
