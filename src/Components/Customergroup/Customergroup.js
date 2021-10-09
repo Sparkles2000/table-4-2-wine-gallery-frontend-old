@@ -1,6 +1,6 @@
-import React from 'React';
-import { useState, useEffect } from "React";
-import { Link } from "React-router-dom";
+import React from 'react';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Customergroup({customergroup, updateCustomergroup, deleteCustomergroup, initialDelay=0}) {
 
@@ -45,7 +45,7 @@ return(
     <div className="customergroup-card">
       
     <Link to={`/customergroups/${customergroup.id}`}>
-        <p>Customer Group Party: {customerparty.party}</p>
+        <p>Customer Group Party: {customergroup.party}</p>
       </Link>
       <p>Party: {customergroup.party}</p>
       <p>Party Quantity:  {customergroup.partyquantity} </p>

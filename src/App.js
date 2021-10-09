@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Route, Switch } from 'React-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
-import CustomergroupContainer from './components/CustomergroupContainer/CustomergroupContainer';
-// import CustomergroupInfo from './components/CustomergroupInfo/CustomergroupInfo';
+import CustomergroupContainer from './Components/Customergroup/CustomergroupContainer';
+import CustomergroupInfo from './Components/Customergroup/CustomergroupInfo';
 // import BrandofwineContainer from './Components/BrandofwineContainer/BrandofwineContainer';
 // import BrandofwineInfo from './Components/BrandofwineInfo/BrandofwineInfo';
 // import ArtsessionContainer from './Components/ArtsessionContainer/ArtsessionContainer';
@@ -28,10 +28,10 @@ function App() {
        <Route exact path="/customergroups">
        <CustomergroupContainer />
        </Route>
-       {/* <Route exact path="/customergroups/:id">
+       <Route exact path="/customergroups/:id">
        <CustomergroupInfo />
        </Route>
-       <Route exact path="/brandofwines">
+       {/* <Route exact path="/brandofwines">
        <BrandofwineContainer />
        </Route>
        <Route path="/brandofwines/:id">

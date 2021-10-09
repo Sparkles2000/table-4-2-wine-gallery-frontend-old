@@ -1,11 +1,11 @@
 
-import React, { useEffect, useState } from "React";
-import { useParams } from "React-router-dom";
-import { BASE_URL } from "./constraints/index.js";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { BASE_URL } from "../constraints/index.js";
 
 
 
-export default function CustomerInfo() {
+function CustomergroupInfo() {
     const [customergroup, setCustomergroup] = useState(null);
   
     const { id } = useParams();
@@ -13,7 +13,7 @@ export default function CustomerInfo() {
     useEffect(() => {
       fetch(BASE_URL + 'customergroups/' + id)
         .then((res) => res.json())
-        .then((json) => setCustomergroups(json));
+        .then((json) => setCustomergroup(json));
     }, [id]);
   
     useEffect(() => {

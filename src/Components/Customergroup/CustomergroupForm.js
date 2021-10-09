@@ -1,10 +1,10 @@
 // import { useHistory } from "react-router-dom";
-import { useState } from "React";
+import { useState } from "react";
 
 
 
 
-function CustomerForm({createCustomergroup}) {
+function CustomergroupForm({createCustomergroup}) {
 
     const [party, setParty] = useState("");
     const [partyquantity, setPartyquantity] = useState("");
@@ -37,11 +37,11 @@ function CustomerForm({createCustomergroup}) {
   value={ partyquantity }
   onChange={(e) => setPartyquantity(e.target.value)} />
 
-  <label className="form-label">Customer status</label>
+  <label className="form-label">Customer Status</label>
   <input type="text"
   placeholder='Status' 
   value={ customerstatus }
-  onChange={(e) => setCustomestatus(e.target.value)} />
+  onChange={(e) => setCustomerstatus(e.target.value)} />
 
 <button>Submit</button>
 <br />
